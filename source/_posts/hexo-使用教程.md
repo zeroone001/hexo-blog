@@ -38,7 +38,7 @@ ssh-keygen -t rsa -C "ilylys@163.com"
 deploy:
   type: git
   repo: git@github.com:zeroone001/zeroone001.github.io.git
-  branch: master
+  branch: main
 ```
 安装插件：
 ```shell
@@ -49,9 +49,9 @@ npm install hexo-deployer-git --save
 ```shell
 hexo new "article name" #新建文章
 hexo clean #清理public
-hexo g #生成静态页面到public目录
+hexo generate #生成静态页面到public目录
 hexo s #启动本地服务，查看编写的页面
-hexo d #上传静态文件到GitHub
+hexo deploy #上传静态文件到GitHub
 hexo help #查看帮助
 ```
 ### theme
